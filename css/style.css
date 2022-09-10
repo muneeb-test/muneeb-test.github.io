@@ -9,9 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/img/circle-cover-bg1.jpg");
+  background: url("/img/4.jpg");
   background-size: cover;
   flex-direction: column;
+  width: 100%;
 }
 .container section {
   min-height: 100vh;
@@ -21,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/img/circle-cover-bg1.jpg");
+  background: url("/img/4.jpg");
   background-size: cover;
   flex-direction: column;
   justify-content: flex-start;
@@ -32,12 +33,12 @@
 .container .cover-page .wedding-cover-text {
   font-family: "Alata", sans-serif;
   font-size: 20px;
-  color: #fff;
+  color: #cb3c81;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 .container .cover-page .wedding-couple-name {
   font-family: "Elsie Swash Caps", cursive;
-  color: #800bba;
+  color: #CDA235;
   font-size: 56px;
   font-weight: 900;
   margin-top: 16px;
@@ -47,14 +48,15 @@
   font-family: "Alata", sans-serif;
   font-size: 20px;
   margin-bottom: 16px;
-  color: #fff;
+  color: #cb3c81;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 .container .cover-page .open-invitation {
   font-family: "Alata", sans-serif;
   text-decoration: none;
   color: #fff;
-  background-color: #800bba;
+  background-color: #CDA235;
+  font-size: 14px;
   padding: 4px 12px;
   border-radius: 32px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
@@ -63,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/img/circle-cover-bg1.jpg");
+  background: url("/img/3.jpg");
   background-size: cover;
   width: 100%;
 }
@@ -74,19 +76,19 @@
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   width: 90%;
   height: 24rem;
   flex-direction: column;
+  border-radius: 50%;
 }
 .container .circle-container .circle .circle-img {
   width: 70%;
   margin-bottom: 16px;
 }
 .container .circle-container .circle .circle-text-header {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 16px;
   font-weight: bold;
 }
@@ -94,4 +96,63 @@
   width: 90%;
   text-align: center;
   font-size: 13px;
+}
+.container .name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/8.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.container .name-container .name-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  flex-direction: column;
+  border-radius: 15px;
+  width: 95%;
+  text-align: center;
+}
+.container .name-container .name-card .circle-img {
+  width: 70%;
+  margin-top: 32px;
+}
+.container .name-container .name-card .inv-text {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 24px;
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-top: 16px;
+  line-height: 28px;
+}
+.container .name-container .name-card .main-text {
+  font-family: "Elsie Swash Caps", cursive;
+  color: #CDA235;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 16px 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container .name-container .name-card .sub-main-text {
+  font-family: "Alice", serif;
+  font-size: 18px;
+  color: #F8F4B7;
+  margin-bottom: 32px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  width: 90%;
+}
+.container .name-container .name-card .with {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  letter-spacing: 12px;
 }/*# sourceMappingURL=style.css.map */

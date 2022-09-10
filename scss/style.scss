@@ -11,6 +11,7 @@
     @include flex();
     @include main-bg();
     flex-direction: column;
+    width: 100%;
 
     section {
         min-height: 100vh;
@@ -30,13 +31,13 @@
         .wedding-cover-text {
             font-family: 'Alata', sans-serif;
             font-size: 20px;
-            color: $cover-font-muted;
+            color: $cover-font2;
             text-shadow: $text-shadow;
         }
 
         .wedding-couple-name {
             font-family: 'Elsie Swash Caps', cursive;
-            color: $cover-font;
+            color: $cover-font3;
             font-size: 56px;
             font-weight: 900;
             margin-top: 16px;
@@ -47,15 +48,16 @@
             font-family: 'Alata', sans-serif;
             font-size: 20px;
             margin-bottom: 16px;
-            color: $cover-font-muted;
+            color: $cover-font2;
             text-shadow: $text-shadow;
         }
 
         .open-invitation {
             font-family: 'Alata', sans-serif;
             text-decoration: none;
-            color: #fff;
-            background-color: $cover-font;
+            color: $font-white;
+            background-color: $cover-font3;
+            font-size: 14px;
             padding: 4px 12px;
             border-radius: 32px;
             box-shadow: $text-shadow;
@@ -64,31 +66,87 @@
 
     .circle-container {
         @include flex();
-        @include main-bg();
+        @include main-bg-2();
         width: 100%;
-
         .circle {
             @include flex();
             @include glass();
             width: 90%;
             height: 24rem;
             flex-direction: column;
+            border-radius: 50%;
 
             .circle-img {
                 width: 70%;
                 margin-bottom: 16px;
             }
-
+            
             .circle-text-header {
-                font-size: 13px;
+                font-size: 15px;
                 margin-bottom: 16px;
                 font-weight: bold;
             }
-
+            
             .circle-text {
                 width: 90%;
                 text-align: center;
                 font-size: 13px;
+            }
+        }
+    }
+
+    .name-container {
+        @include flex();
+        @include main-bg-3();
+        width: 100%;
+
+        .name-card {
+            @include flex();
+            @include glass();
+            backdrop-filter: blur(5px);
+            flex-direction: column;
+            border-radius: 15px;
+            width: 95%;
+            text-align: center;
+
+            .circle-img {
+                width: 70%;
+                margin-top: 32px;
+            }
+
+            .inv-text {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 24px;
+                color: $font-muted;
+                text-shadow: $text-shadow;
+                margin-top: 16px;
+                line-height: 28px;
+            }
+            
+            .main-text {
+                font-family: 'Elsie Swash Caps', cursive;
+                color: $cover-font3;
+                font-size: 32px;
+                font-weight: 900;
+                margin: 16px 0 0 0;
+                text-shadow: $text-shadow;
+            }
+            
+            .sub-main-text {
+                font-family: 'Alice', serif;
+                font-size: 18px;
+                color: $cover-font4;
+                margin-bottom: 32px;
+                text-shadow: $text-shadow;
+                font-style: italic;
+                width: 90%;
+            }
+            
+            .with {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 32px;
+                text-shadow: $text-shadow;
+                letter-spacing: 12px;
             }
         }
     }
