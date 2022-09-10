@@ -42,17 +42,17 @@
     /* background: linear-gradient(180deg, rgba(255, 196, 238, 1) 0%, rgba(254, 224, 243, 1) 49%, rgba(255, 255, 255, 1) 100%); */
 }
 
-.container {
+.container, .cover-page {
     flex-direction: column;
+}
+
+.cover-page {
+    justify-content: flex-start;
 }
 
 section {
     min-height: 100vh;
     max-width: 420px;
-}
-
-.cover-page {
-    flex-direction: column;
 }
 
 .cover-img {
@@ -72,13 +72,12 @@ section {
     font-size: 3.5rem;
     font-weight: 900;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     text-shadow: var(--text-shadow);
 }
 
 .wedding-date {
     font-family: 'Alata', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     color: var(--cover-font-muted);
     text-shadow: var(--text-shadow);
@@ -89,7 +88,7 @@ section {
     text-decoration: none;
     color: #fff;
     background-color: var(--cover-font);
-    padding: 1rem 2.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 2rem;
     box-shadow: var(--text-shadow);
     transition: 0.5s all ease-in;
