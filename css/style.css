@@ -1,130 +1,97 @@
-:root {
-    /* --cover-font: #cb3c81; */
-    --cover-font: #800bba;
-    --cover-font-muted: #fff;
-    --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Alata', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/circle-cover-bg1.jpg");
+  background-size: cover;
+  flex-direction: column;
 }
-
-.glass {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(30px);
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+.container section {
+  min-height: 100vh;
+  max-width: 420px;
 }
-
-.main-bg {
-    background: rgb(250, 202, 223);
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(254, 224, 243, 1) 49%, rgba(255, 196, 238, 1) 100%); */
-    /* background-image: linear-gradient(to bottom, #fde9fd, #f0d7f0, #e2c5e2, #d5b3d5, #c8a2c8); */
-    /* background-image: linear-gradient(to bottom, #977697, #956d95, #946394, #925992, #904f90); */
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(201, 175, 214, 1) 49%, rgba(150, 83, 184, 1) 100%); */
-    background: url("/img/circle-cover-bg-rev.jpg");
-    background-size: cover;
+.container .cover-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/circle-cover-bg1.jpg");
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.main-bg-rev {
-    background: linear-gradient(180deg, rgba(150, 83, 184, 1) 0%, rgba(201, 175, 214, 1) 49%, rgba(255, 255, 255, 1) 100%);
-    /* background: rgb(250, 202, 223); */
-    /* background: linear-gradient(180deg, rgba(255, 196, 238, 1) 0%, rgba(254, 224, 243, 1) 49%, rgba(255, 255, 255, 1) 100%); */
+.container .cover-page .cover-img {
+  width: 100%;
 }
-
-.container, .cover-page {
-    flex-direction: column;
+.container .cover-page .wedding-cover-text {
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-
-.cover-page {
-    justify-content: flex-start;
+.container .cover-page .wedding-couple-name {
+  font-family: "Elsie Swash Caps", cursive;
+  color: #800bba;
+  font-size: 56px;
+  font-weight: 900;
+  margin-top: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-
-section {
-    min-height: 100vh;
-    max-width: 420px;
+.container .cover-page .wedding-date {
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-
-.cover-img {
-    width: 100%;
+.container .cover-page .open-invitation {
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: #800bba;
+  padding: 4px 12px;
+  border-radius: 32px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-
-.wedding-cover-text {
-    font-family: 'Alata', sans-serif;
-    font-size: 1.2rem;
-    color: var(--cover-font-muted);
-    text-shadow: var(--text-shadow);
+.container .circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/circle-cover-bg1.jpg");
+  background-size: cover;
+  width: 100%;
 }
-
-.wedding-couple-name {
-    font-family: 'Elsie Swash Caps', cursive;
-    color: var(--cover-font);
-    font-size: 3.5rem;
-    font-weight: 900;
-    margin-top: 1rem;
-    text-shadow: var(--text-shadow);
+.container .circle-container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 90%;
+  height: 24rem;
+  flex-direction: column;
 }
-
-.wedding-date {
-    font-family: 'Alata', sans-serif;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: var(--cover-font-muted);
-    text-shadow: var(--text-shadow);
+.container .circle-container .circle .circle-img {
+  width: 70%;
+  margin-bottom: 16px;
 }
-
-.open-invitation {
-    font-family: 'Alata', sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--cover-font);
-    padding: 0.8rem 1.5rem;
-    border-radius: 2rem;
-    box-shadow: var(--text-shadow);
-    transition: 0.5s all ease-in;
+.container .circle-container .circle .circle-text-header {
+  font-size: 13px;
+  margin-bottom: 16px;
+  font-weight: bold;
 }
-
-
-/* Page 2 */
-.circle-container {
-    width: 100%;
-    background: url("/img/circle-cover-bg.jpg");
-    background-size: cover;
-
-}
-
-.circle {
-    width: 90%;
-    height: 25rem;
-    /* border-radius: 50%; */
-    flex-direction: column;
-}
-
-.circle-img {
-    width: 70%;
-    margin-bottom: 1rem;
-}
-
-.circle-text-header {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.circle-text {
-    width: 90%;
-    text-align: center;
-    font-size: 0.75rem;
-    line-height: 1.5rem;
-    /* color: rgb(61, 61, 61); */
-}
+.container .circle-container .circle .circle-text {
+  width: 90%;
+  text-align: center;
+  font-size: 13px;
+}/*# sourceMappingURL=style.css.map */

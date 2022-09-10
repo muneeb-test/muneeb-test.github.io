@@ -1,0 +1,95 @@
+@import "config";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+.container {
+    @include flex();
+    @include main-bg();
+    flex-direction: column;
+
+    section {
+        min-height: 100vh;
+        max-width: 420px;
+    }
+
+    .cover-page {
+        @include flex();
+        @include main-bg();
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .cover-img {
+            width: 100%;
+        }
+
+        .wedding-cover-text {
+            font-family: 'Alata', sans-serif;
+            font-size: 20px;
+            color: $cover-font-muted;
+            text-shadow: $text-shadow;
+        }
+
+        .wedding-couple-name {
+            font-family: 'Elsie Swash Caps', cursive;
+            color: $cover-font;
+            font-size: 56px;
+            font-weight: 900;
+            margin-top: 16px;
+            text-shadow: $text-shadow;
+        }
+
+        .wedding-date {
+            font-family: 'Alata', sans-serif;
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: $cover-font-muted;
+            text-shadow: $text-shadow;
+        }
+
+        .open-invitation {
+            font-family: 'Alata', sans-serif;
+            text-decoration: none;
+            color: #fff;
+            background-color: $cover-font;
+            padding: 4px 12px;
+            border-radius: 32px;
+            box-shadow: $text-shadow;
+        }
+    }
+
+    .circle-container {
+        @include flex();
+        @include main-bg();
+        width: 100%;
+
+        .circle {
+            @include flex();
+            @include glass();
+            width: 90%;
+            height: 24rem;
+            flex-direction: column;
+
+            .circle-img {
+                width: 70%;
+                margin-bottom: 16px;
+            }
+
+            .circle-text-header {
+                font-size: 13px;
+                margin-bottom: 16px;
+                font-weight: bold;
+            }
+
+            .circle-text {
+                width: 90%;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+    }
+}
