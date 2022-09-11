@@ -139,10 +139,13 @@ body {
             }
             
             .sub-main-text1, .sub-main-text2 {
+                @include black-font();
                 font-weight: 300;
                 font-size: 14px;
-                margin-bottom: 32px;
                 font-style: italic;
+                font-weight: 500;
+                text-shadow: $text-shadow;
+                margin-bottom: 32px;
                 width: 90%;
             }
 
