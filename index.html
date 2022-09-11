@@ -7,6 +7,8 @@
     <title>Albert - Lita Wedding</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,10 +30,10 @@
         </section>
 
         <section id="circle-container" class="circle-container">
-            <div class="circle">
-                <img src="/img/bismillah.png" alt="" class="circle-img">
-                <p class="circle-text-header">Assalmu'alaikum Warahmatullahi Wabarakatuh</p>
-                <p class="circle-text">Menuat dua hati dalam ikatan suci pernikahan,<br>semoga langkah awal kami menuju syurga<br>Dengan mengharapkan keberkahan dan keridhoan<br>Allah SWT Tanpa Meguarangi rasa hormat, kami<br>mengundang Bapak/Ibu/Saudara/i serta kerabat<br>sekalian untuk hadir pada pernikanan kami</p>
+            <div class="circle" data-aos="slide-up">
+                <img src="/img/bismillah.png" class="circle-img" data-aos="slide-left">
+                <p class="circle-text-header" data-aos="slide-left">Assalmu'alaikum Warahmatullahi Wabarakatuh</p>
+                <p class="circle-text" data-aos="slide-left">Menuat dua hati dalam ikatan suci pernikahan,<br>semoga langkah awal kami menuju syurga<br>Dengan mengharapkan keberkahan dan keridhoan<br>Allah SWT Tanpa Meguarangi rasa hormat, kami<br>mengundang Bapak/Ibu/Saudara/i serta kerabat<br>sekalian untuk hadir pada pernikanan kami</p>
             </div>
         </section>
 
@@ -100,5 +102,14 @@
             <p class="hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi eligendi impedit corporis fugit consequuntur voluptates optio magni accusantium</p>
         </div>
     </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>
