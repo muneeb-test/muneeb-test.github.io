@@ -9,7 +9,7 @@
 
 .container {
     @include flex();
-    @include main-bg();
+    // @include main-bg();
     flex-direction: column;
     width: 100%;
 
@@ -25,7 +25,7 @@
         justify-content: flex-start;
 
         .cover-img {
-            width: 60%;
+            width: 80%;
             margin-top: 24px;
         }
 
@@ -34,6 +34,7 @@
             font-size: 20px;
             color: $font-white;
             text-shadow: $text-shadow;
+            margin-top: 56px;
         }
 
         .wedding-couple-name {
@@ -100,12 +101,13 @@
         @include flex();
         @include main-bg-3();
         width: 100%;
+        // min-height: 80%;
 
         .name-card {
             @include flex();
             @include glass();
-            background: linear-gradient(135deg, rgba(232, 33, 228, 0.564), rgba(255, 255, 255, 0));
-            backdrop-filter: blur(25px);
+            // background: linear-gradient(135deg, rgba(232, 33, 228, 0.564), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(3px);
             flex-direction: column;
             border-radius: 15px;
             width: 95%;
