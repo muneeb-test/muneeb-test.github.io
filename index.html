@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Alata&family=Alice&family=Elsie+Swash+Caps:wght@400;900&family=Sacramento&family=Shadows+Into+Light&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Caveat:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Elsie+Swash+Caps:wght@400;900&family=Sacramento&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
 </head>
 <body>
@@ -26,26 +26,27 @@
             <p class="wedding-cover-text">You're invited to the wedding of</p>
             <h1 class="wedding-couple-name">Lita & Albert</h1>
             <p class="wedding-date">Sabtu, 01 Oktober 2022</p>
-            <a class="open-invitation" href="#circle-container"><i class="fa-regular fa-envelope"></i> Open Invitation</a>
+            <a class="open-invitation" href="#open-container"><i class="fa-regular fa-envelope"></i> Open Invitation</a>
         </section>
 
-        <section id="circle-container" class="circle-container">
+        <section id="open-container" class="open-container">
             <div class="circle" data-aos="fade-up">
                 <img src="/img/bismillah.png" class="circle-img" data-aos="fade-left">
                 <p class="circle-text-header" data-aos="fade-left">Assalmu'alaikum Warahmatullahi Wabarakatuh</p>
                 <p class="circle-text" data-aos="fade-left">Menuat dua hati dalam ikatan suci pernikahan,<br>semoga langkah awal kami menuju syurga<br>Dengan mengharapkan keberkahan dan keridhoan<br>Allah SWT Tanpa Meguarangi rasa hormat, kami<br>mengundang Bapak/Ibu/Saudara/i serta kerabat<br>sekalian untuk hadir pada pernikanan kami</p>
             </div>
+            <img src="/img/play.png" id="icon">
         </section>
 
         <section class="name-container">
             <div class="name-card" data-aos="zoom-in">
                 <img src="/img/assalam.png" alt="" class="circle-img" data-aos="zoom-in-down" data-aos-delay="530">
                 <p class="inv-text" data-aos="zoom-in-down">You are invited to celebrate<br>our wedding day</p>
-                <h1 class="main-text" data-aos="fade-up">Lita Maulida Jaslindo S.Pd.</h1>
-                <h4 class="sub-main-text1" data-aos="fade-up">Putri Kedua dari Bapak Drs. H. Jaslindo M.S & Ibu Hj. Eka Putri Daroswita S.K.M</h4>
+                <h1 class="main-text" data-aos="fade-up-left">Lita Maulida Jaslindo S.Pd.</h1>
+                <h4 class="sub-main-text1" data-aos="fade-up-right">Putri Kedua dari Bapak Drs. H. Jaslindo M.S & Ibu Hj. Eka Putri Daroswita S.K.M</h4>
                 <h4 class="with" data-aos="zoom-in-up" data-aos-delay="400">&</h4>
-                <h1 class="main-text" data-aos="fade-up">Dr.(C) Albert Tanjung, S.H., M.Kn., C.L.A</h1>
-                <h4 class="sub-main-text2" data-aos="fade-up">Putra Pertama Bapak Drs. Alius & Ibu Azizah Delly, S.H</h4>
+                <h1 class="main-text" data-aos="fade-up-left">Dr.(C) Albert Tanjung, S.H., M.Kn., C.L.A</h1>
+                <h4 class="sub-main-text2" data-aos="fade-up-right">Putra Pertama Bapak Drs. Alius & Ibu Azizah Delly, S.H</h4>
             </div>
         </section>
 
@@ -64,7 +65,7 @@
                 <h4 class="location-icon" data-aos="fade-left"><span><i class="fa-solid fa-location-dot"></i> Tempat:</span></h4>
                 <h4 class="location" data-aos="fade-right">GOR UNP Kampus 2 UNP, Lubuk Buaya, Padang.</h4>
 
-                <img src="/img/location.png" class="location-image">
+                <a class="open-map" href="https://goo.gl/maps/Pv9X7bEv4TJeb4VS7" target="_blank"><i class="fa-solid fa-map-location-dot"></i> Buka Maps</a>
             </div>
         </section>
 
@@ -98,12 +99,16 @@
             </div>
         </section>
 
-        <div class="hiden">
+        <div class="hidden-text">
             <p class="hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi eligendi impedit corporis fugit consequuntur voluptates optio magni accusantium</p>
         </div>
+
+        <audio id="song" autoplay loop>
+            <source src="/img/Syn-Cole-Time.mp3" type="audio/mp3">
+        </audio>
     </div>
 
-
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -111,5 +116,6 @@
             duration: 1000,
         });
     </script>
+    <script src="app.js"></script>
 </body>
 </html>
