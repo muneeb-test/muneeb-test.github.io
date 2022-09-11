@@ -12,6 +12,7 @@
     // @include main-bg();
     flex-direction: column;
     width: 100%;
+    text-align: center;
 
     section {
         min-height: 100vh;
@@ -22,17 +23,15 @@
         @include flex();
         @include main-bg();
         flex-direction: column;
-        justify-content: flex-start;
 
         .cover-img {
-            width: 80%;
-            margin-top: 24px;
+            width: 70%;
         }
 
         .wedding-cover-text {
             font-family: 'Alata', sans-serif;
             font-size: 20px;
-            color: $font-white;
+            color: $cover-font-light;
             text-shadow: $text-shadow;
             margin-top: 56px;
         }
@@ -42,7 +41,7 @@
             color: $cover-font;
             font-size: 56px;
             font-weight: 900;
-            margin-top: 16px;
+            margin: 24px 0;
             text-shadow: $text-shadow;
         }
 
@@ -50,7 +49,7 @@
             font-family: 'Alata', sans-serif;
             font-size: 20px;
             margin-bottom: 16px;
-            color: $font-white;
+            color: $cover-font-light;
             text-shadow: $text-shadow;
         }
 
@@ -59,8 +58,9 @@
             text-decoration: none;
             color: $font-white;
             background-color: $cover-font;
-            font-size: 14px;
-            padding: 4px 12px;
+            font-size: 18px;
+            padding: 10px 30px;
+            margin-top: 24px;
             border-radius: 32px;
             box-shadow: $text-shadow;
         }
@@ -79,19 +79,20 @@
             border-radius: 50%;
 
             .circle-img {
-                width: 70%;
-                margin-bottom: 16px;
+                width: 60%;
+                margin-bottom: 12px;
             }
             
             .circle-text-header {
+                color: $font-black;
                 font-size: 15px;
-                margin-bottom: 16px;
+                margin-bottom: 12px;
                 font-weight: bold;
             }
             
             .circle-text {
+                color: $font-black;
                 width: 90%;
-                text-align: center;
                 font-size: 13px;
             }
         }
@@ -101,13 +102,11 @@
         @include flex();
         @include main-bg-3();
         width: 100%;
-        // min-height: 80%;
 
         .name-card {
             @include flex();
             @include glass();
-            // background: linear-gradient(135deg, rgba(232, 33, 228, 0.564), rgba(255, 255, 255, 0));
-            backdrop-filter: blur(3px);
+            backdrop-filter: blur(2px);
             flex-direction: column;
             border-radius: 15px;
             width: 95%;
@@ -150,8 +149,37 @@
             .with {
                 font-family: 'Elsie Swash Caps', cursive;
                 font-size: 48px;
+                color: $font-black;
                 text-shadow: $text-shadow;
                 letter-spacing: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:380px) {
+    .container {
+        section {
+            max-width: 380px;
+        }
+
+        .circle-container{
+            .circle {
+                width: 95%;
+                height: 22rem;
+            }
+
+            .circle-text-header {
+                font-size: 13px;
+            }
+
+            .circle-text {
+                font-size: 11px;
             }
         }
     }
