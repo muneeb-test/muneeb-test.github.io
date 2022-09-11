@@ -31,7 +31,7 @@
         .wedding-cover-text {
             font-family: 'Alata', sans-serif;
             font-size: 20px;
-            color: $cover-font2;
+            color: $font-white;
             text-shadow: $text-shadow;
         }
 
@@ -48,7 +48,7 @@
             font-family: 'Alata', sans-serif;
             font-size: 20px;
             margin-bottom: 16px;
-            color: $cover-font2;
+            color: $font-white;
             text-shadow: $text-shadow;
         }
 
@@ -117,8 +117,8 @@
             .inv-text {
                 font-family: 'Shadows Into Light', cursive;
                 font-size: 24px;
-                color: $font-muted;
-                text-shadow: $text-shadow;
+                color: $font-black;
+                text-shadow: $text-shadow3;
                 margin-top: 16px;
                 line-height: 28px;
             }
@@ -128,25 +128,26 @@
                 color: $cover-font3;
                 font-size: 32px;
                 font-weight: 900;
-                margin: 16px 0 0 0;
+                margin: 28px 0 0 0;
                 text-shadow: $text-shadow;
             }
             
             .sub-main-text {
-                font-family: 'Alice', serif;
+                // font-family: 'Alice', serif;
+                font-family: 'Alata', sans-serif;
+                font-weight: 300;
                 font-size: 18px;
-                color: $cover-font4;
                 margin-bottom: 32px;
-                text-shadow: $text-shadow;
+                text-shadow: $text-shadow2;
                 font-style: italic;
                 width: 90%;
             }
             
             .with {
                 font-family: 'Shadows Into Light', cursive;
-                font-size: 32px;
+                font-size: 24px;
                 text-shadow: $text-shadow;
-                letter-spacing: 12px;
+                letter-spacing: 10px;
             }
         }
     }
