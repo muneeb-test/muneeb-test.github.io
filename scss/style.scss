@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: 'Alata', sans-serif;
 }
 
@@ -23,15 +26,15 @@
         @include flex();
         @include main-bg();
         flex-direction: column;
+        justify-content: flex-start;
 
         .cover-img {
             width: 70%;
         }
 
         .wedding-cover-text {
-            font-family: 'Alata', sans-serif;
             font-size: 20px;
-            color: $cover-font-light;
+            color: $font-black;
             text-shadow: $text-shadow;
             margin-top: 56px;
         }
@@ -46,10 +49,9 @@
         }
 
         .wedding-date {
-            font-family: 'Alata', sans-serif;
             font-size: 20px;
             margin-bottom: 16px;
-            color: $cover-font-light;
+            color: $font-black;
             text-shadow: $text-shadow;
         }
 
@@ -59,7 +61,7 @@
             color: $font-white;
             background-color: $cover-font;
             font-size: 18px;
-            padding: 10px 30px;
+            padding: 8px 35px;
             margin-top: 24px;
             border-radius: 32px;
             box-shadow: $text-shadow;
@@ -84,7 +86,7 @@
             }
             
             .circle-text-header {
-                color: $font-black;
+                color: $cover-font;
                 font-size: 15px;
                 margin-bottom: 12px;
                 font-weight: bold;
@@ -93,14 +95,14 @@
             .circle-text {
                 color: $font-black;
                 width: 90%;
-                font-size: 13px;
+                font-size: 12px;
             }
         }
     }
 
     .name-container {
         @include flex();
-        @include main-bg-3();
+        @include main-bg();
         width: 100%;
 
         .name-card {
@@ -110,7 +112,6 @@
             flex-direction: column;
             border-radius: 15px;
             width: 95%;
-            text-align: center;
 
             .circle-img {
                 width: 70%;
@@ -119,7 +120,7 @@
 
             .inv-text {
                 font-family: 'Shadows Into Light', cursive;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 700;
                 margin-top: 16px;
             }
@@ -127,14 +128,13 @@
             .main-text {
                 font-family: 'Elsie Swash Caps', cursive;
                 color: $cover-font;
-                font-size: 32px;
+                font-size: 26px;
                 font-weight: 900;
                 margin: 28px 0 0 0;
                 text-shadow: $text-shadow;
             }
             
             .sub-main-text1, .sub-main-text2 {
-                font-family: 'Alata', sans-serif;
                 font-weight: 300;
                 font-size: 14px;
                 margin-bottom: 32px;
@@ -152,6 +152,61 @@
                 color: $font-black;
                 text-shadow: $text-shadow;
                 letter-spacing: 10px;
+            }
+        }
+    }
+
+    .inv-container {
+        @include flex();
+        @include main-bg-2();
+        width: 100%;
+
+        .inv-card{
+            @include glass();
+            @include flex();
+            backdrop-filter: blur(2px);
+            flex-direction: column;
+            border-radius: 15px;
+            width: 95%;
+
+            .ring-img {
+                width: 15%;
+                margin-top: 16px;
+            }
+
+            .nikah-heading {
+                font-family: 'Sacramento', cursive;
+                font-size: 48px;
+                color: $cover-font;
+                text-shadow: $text-shadow;
+            }
+
+            .date {
+                @include black-font();
+                margin-bottom: 10px;
+            }
+
+            .time {
+                @include black-font();
+                margin-bottom: 32px;
+            }
+
+            .location-icon {
+                @include black-font();
+                margin-bottom: 10px;
+                width: 90%;
+                color: red;
+                letter-spacing: 1.5px
+            }
+
+            .location {
+                @include black-font();
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+            .location-image {
+                width: 60%;
             }
         }
     }
