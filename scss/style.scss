@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Alata', sans-serif;
+    
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    overflow-x: hidden;
 
     section {
         min-height: 100vh;
@@ -73,6 +75,7 @@ body {
         @include flex();
         @include main-bg-2();
         width: 100%;
+
         .circle {
             @include flex();
             @include glass();

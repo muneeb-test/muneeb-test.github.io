@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   width: 100%;
   text-align: center;
+  overflow-x: hidden;
 }
 .container section {
   min-height: 100vh;
