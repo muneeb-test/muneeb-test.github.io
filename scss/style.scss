@@ -25,7 +25,8 @@
         justify-content: flex-start;
 
         .cover-img {
-            width: 100%;
+            width: 60%;
+            margin-top: 24px;
         }
 
         .wedding-cover-text {
@@ -37,7 +38,7 @@
 
         .wedding-couple-name {
             font-family: 'Elsie Swash Caps', cursive;
-            color: $cover-font3;
+            color: $cover-font;
             font-size: 56px;
             font-weight: 900;
             margin-top: 16px;
@@ -56,7 +57,7 @@
             font-family: 'Alata', sans-serif;
             text-decoration: none;
             color: $font-white;
-            background-color: $cover-font3;
+            background-color: $cover-font;
             font-size: 14px;
             padding: 4px 12px;
             border-radius: 32px;
@@ -103,7 +104,8 @@
         .name-card {
             @include flex();
             @include glass();
-            backdrop-filter: blur(5px);
+            background: linear-gradient(135deg, rgba(232, 33, 228, 0.564), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(25px);
             flex-direction: column;
             border-radius: 15px;
             width: 95%;
@@ -117,35 +119,35 @@
             .inv-text {
                 font-family: 'Shadows Into Light', cursive;
                 font-size: 24px;
-                color: $font-black;
-                text-shadow: $text-shadow3;
+                font-weight: 700;
                 margin-top: 16px;
-                line-height: 28px;
             }
             
             .main-text {
                 font-family: 'Elsie Swash Caps', cursive;
-                color: $cover-font3;
+                color: $cover-font;
                 font-size: 32px;
                 font-weight: 900;
                 margin: 28px 0 0 0;
                 text-shadow: $text-shadow;
             }
             
-            .sub-main-text {
-                // font-family: 'Alice', serif;
+            .sub-main-text1, .sub-main-text2 {
                 font-family: 'Alata', sans-serif;
                 font-weight: 300;
-                font-size: 18px;
+                font-size: 14px;
                 margin-bottom: 32px;
-                text-shadow: $text-shadow2;
                 font-style: italic;
                 width: 90%;
             }
+
+            .sub-main-text2 {
+                margin-bottom: 56px;
+            }
             
             .with {
-                font-family: 'Shadows Into Light', cursive;
-                font-size: 24px;
+                font-family: 'Elsie Swash Caps', cursive;
+                font-size: 48px;
                 text-shadow: $text-shadow;
                 letter-spacing: 10px;
             }

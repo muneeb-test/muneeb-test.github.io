@@ -28,7 +28,8 @@
   justify-content: flex-start;
 }
 .container .cover-page .cover-img {
-  width: 100%;
+  width: 60%;
+  margin-top: 24px;
 }
 .container .cover-page .wedding-cover-text {
   font-family: "Alata", sans-serif;
@@ -38,7 +39,7 @@
 }
 .container .cover-page .wedding-couple-name {
   font-family: "Elsie Swash Caps", cursive;
-  color: #CDA235;
+  color: #800bba;
   font-size: 56px;
   font-weight: 900;
   margin-top: 16px;
@@ -55,7 +56,7 @@
   font-family: "Alata", sans-serif;
   text-decoration: none;
   color: #fff;
-  background-color: #CDA235;
+  background-color: #800bba;
   font-size: 14px;
   padding: 4px 12px;
   border-radius: 32px;
@@ -114,8 +115,9 @@
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background: linear-gradient(135deg, rgba(232, 33, 228, 0.564), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
   flex-direction: column;
   border-radius: 15px;
   width: 95%;
@@ -128,31 +130,31 @@
 .container .name-container .name-card .inv-text {
   font-family: "Shadows Into Light", cursive;
   font-size: 24px;
-  color: #000;
-  text-shadow: 1px 1px 2px rgba(248, 244, 183, 0.7);
+  font-weight: 700;
   margin-top: 16px;
-  line-height: 28px;
 }
 .container .name-container .name-card .main-text {
   font-family: "Elsie Swash Caps", cursive;
-  color: #CDA235;
+  color: #800bba;
   font-size: 32px;
   font-weight: 900;
   margin: 28px 0 0 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-.container .name-container .name-card .sub-main-text {
+.container .name-container .name-card .sub-main-text1, .container .name-container .name-card .sub-main-text2 {
   font-family: "Alata", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 32px;
-  text-shadow: 1px 1px 2px rgba(174, 49, 196, 0.7);
   font-style: italic;
   width: 90%;
 }
+.container .name-container .name-card .sub-main-text2 {
+  margin-bottom: 56px;
+}
 .container .name-container .name-card .with {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 24px;
+  font-family: "Elsie Swash Caps", cursive;
+  font-size: 48px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   letter-spacing: 10px;
 }/*# sourceMappingURL=style.css.map */
