@@ -219,7 +219,7 @@ body {
   margin-bottom: 5px;
 }
 .container .inv-container .inv-card .location-image {
-  width: 60%;
+  width: 50%;
   margin-bottom: 10px;
 }
 .container .safety {
@@ -265,11 +265,12 @@ body {
   margin-bottom: 28px;
 }
 .container .safety .proto-card .img-container .img .mask {
-  width: 40%;
+  width: 30%;
 }
 .container .safety .proto-card .img-container .img h3 {
   color: #000;
   font-size: 12px;
+  line-height: 14px;
 }
 .container .safety .proto-card .sixty-nine {
   font-size: 12px;
@@ -283,6 +284,14 @@ body {
   color: #800bba;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   margin-bottom: 10px;
+}
+.container .hiden {
+  background: url("/img/main-bg.jpg");
+  background-size: cover;
+  max-width: 420px;
+}
+.container .hiden .hide {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 380px) {
