@@ -43,9 +43,9 @@ body {
   margin-top: 56px;
 }
 .container .cover-page .wedding-couple-name {
-  font-family: "Sacramento", cursive;
+  font-family: "Cinzel Decorative", cursive;
   color: #800bba;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 900;
   margin: 24px 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
@@ -143,9 +143,9 @@ body {
   margin-top: 16px;
 }
 .container .name-container .name-card .main-text {
-  font-family: "Caveat", cursive;
+  font-family: "Stint Ultra Condensed", cursive;
   color: #800bba;
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 900;
   margin: 28px 0 0 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
@@ -297,7 +297,7 @@ body {
 .container .safety .proto-card .thanks {
   color: #800bba;
   margin-bottom: 15px;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Stint Ultra Condensed", cursive;
   font-size: 32px;
   letter-spacing: 4px;
   text-transform: uppercase;
